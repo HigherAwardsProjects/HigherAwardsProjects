@@ -75,12 +75,31 @@
     	
     }
     .project {
-    	width:200px;
+    	width:350px;
+    	display:grid;
+    	grid-template-rows: 250px 48px auto;
+    	grid-template-areas: 'Image' 'ProjectHeading' 'ProjectText';
     	border:1px blue solid;
     	margin-top:20px;
     	margin-bottom:20px;
     	padding:3px;
     }   
+    .projectimage {
+    	grid-area:Image;
+    	align-items:center;
+    	border:1px green solid;
+    	height:100%;
+    }
+    .projectheading {
+    	grid-area:ProjectHeading;
+    	border:1px orange solid;
+    	font-size:18px;
+    }
+    .projecttext {
+    	grid-area:ProjectText;
+    	border:1px purple solid;
+    }
+    
     
     
     </style>
@@ -128,7 +147,7 @@
     
 <p>The Girl Scout Higher Awards Projects are larger projects that require a girl to make an impact on the world.  Journey Awards are available at every level starting with Brownies.  The Bronze Award is available to Junior Girl Scouts, the Silver Award is available to Girl Scout Cadettes, and the Gold Award is available to Senior and Ambassador Girl Scouts.  <br><br>
   
-  Service Unit 404 is part of the Greater Chicago and Northwest Indiana Girl Scout Council.  This website was designed to showcase the Higher Awards Projects done by Girl Scouts in our service Unit.<br><br>
+  Service Unit 404 is part of the Greater Chicago and Northwest Indiana Girl Scout Council.  This website was designed to showcase the Higher Awards Projects done by Girl Scouts in our Service Unit.<br><br>
   
 
     
@@ -142,22 +161,56 @@
 <div class="content">
  
   <div class="project">
-    this is a a project
+    <div class="projectimage">
+      
+    </div>
+    <div class="projectheading">
+      Silver Award - "No Straws Spring" - 2023<br>
+      Valerie H, Troop 47307
+    </div>
+   <div class="projecttext">
+     This project was about the environmental harm caused by single use plastic straws.  In order to earn this award, Valerie researched the harm caused by single use plastic straws, met with graduate students at the University of Illinois in Urbana-Champaign to talk about advances in plastic decomposition processes, created a website and a video on youtube, and hosted a booth at the Earth Day Expo in Park Ridge, IL.<br><br>
+     For more information on this project, please visit the <a href="http://nostrawsspring.wordpress.com">No Straws Spring</a> website.
+    </div> 
   </div>
-  <div class="project">
-    this is another project
-  </div>
+ 
+    
     <div class="project">
-    this is a a project
+    <div class="projectimage">
+      
+    </div>     
+    <div class="projectheading">
+     Bronze Award, Plastic Bag Project, 2024<br>
+      Honor H and Emilia D, Troop 47307
+    </div>
+   <div class="projecttext">
+    This project was about helping people cut down on the usage of plastic bags.  We learned about the harm that plastic bags can cause to our environment, attended a local park cleanup, hosted a booth at the Earth Day expo in Park Ridge, and organized a plastic bag recycling drive at our school, recycling 28 pounds of plastic bags - almost 2000 plastic bags!<br><br>
+     For more information on this project, please visit the <a href="http://https://bronzeawardbags.wordpress.com">Bronze Award Bags</a> website.
+    </div> 
   </div>
-  <div class="project">
-    this is another project
+  
+      <div class="project">
+    <div class="projectimage">
+      
+    </div>     
+    <div class="projectheading">
+     Award Name, Project Name, Date<br>
+      Girl Name, Troop Number
+    </div>
+   <div class="projecttext">
+    Project Text
+    </div> 
   </div>
+  
   </div>
+
+  
   <p style="margin:20px;">
     If you are a Girl Scout in Service Unit 404 and would like to have your higher award displayed on our site, please contact the Service Unit Higher Award Coordinator.</p>
     <br>
-  <p style="color:#00AE58;font-size: 16px;margin-left:20px;margin-right:20px;">   Did you know?</p>   <p style="margin:20px;">   This website is also part of a Higher Award Project.  It was created for the Cadette Journey Award MEdia in 2024 by Valerie H. of Troop 47307.
+  <p style="color:#00AE58;font-size:16px;margin-left:20px;margin-right:20px;">   Did you know?</p>   
+  
+  <p style="margin:20px;">   This website is also part of a Higher Award Project.  It was created for the Cadette Journey Award MEdia in 2024 by Valerie H. of Troop 47307.
   </p>
 
 </body>
