@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+  <header>
+  <style>
+    ::-webkit-scrollbar {
+		width: 8px;	
+    	border-radius:5px;
+    }
+    ::-webkit-scrollbar-track{
+    	width: 8px;
+    	background-color:#00AE58;
+    	border-radius:5px;
+    	    }
+    ::-webkit-scrollbar-thumb {
+  	background: #888;
+    border-radius:4px;
+ 	}
+    ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+	}
+    
+    .siteheading {
+    	color:#00AE58
+    }
+    .topcontainer {
+    display:grid;
+    grid-template-rows:252px;
+    grid-template-columns:160px auto;
+    grid-template-areas:'Sidebar Intro';
+    grid-column-gap:25px;
+    border:0px transparent solid;
+    margin-bottom:20px;
+    }
+    .sidenavbar {
+    grid-area:Sidebar;	
+    border:0px transparent solid;
+    }
+    .sidenavitem {
+    	border:1px black solid;
+    background-color:#00AE58;
+    	border-radius:0px 12px 12px 0px;
+    	height:24px;
+    	color:#111111;
+    	line-height:24px;
+    	padding-left:3px;
+    	margin:1px;
+    }
+    .sidenavitem2 {
+    	border:1px black solid;
+    	background-color:#4cc68a;
+    	border-radius: 0px 12px 12px 0px;
+    	height:24px;
+    	color:#111111;
+    	line-height:24px;
+    	padding-left:6px;
+    	margin-left:1px;
+    	margin-top:1px;
+    	margin-bottom:1px;
+    	margin-right:25px;
+    }
+    .main {
+    grid-area:Intro;
+    	margin:5px;
+    	overflow:auto;
+    }
+    .content {
+    	display:flex;
+    	justify-content:space-around;
+    	align-items:center;
+    	flex-direction:row;
+    	flex-wrap:wrap;
+    	border:0px transparent solid;
+    	
+    }
+    .project {
+    	width:400px;
+    	display:grid;
+    	grid-template-rows: 250px 48px 250px;
+    	grid-template-areas: 'Image' 'ProjectHeading' 'ProjectText';
+    	border:2px #00ae58 solid;
+    	margin-top:20px;
+    	margin-bottom:20px;
+    	padding:3px;
+    	overflow:auto;
+    }   
+    .projectimage {
+    	grid-area:Image;
+	align-items:center;	
+    	
+    	height:100%;
+	>img { 
+		max-height:100%;
+	      	max-width:100%;
+		display: block;
+		border: 1px #00ae58 solid;
+  		margin-left: auto;
+  		margin-right: auto;
+		}
+    }
+    .projectheading {
+    	grid-area:ProjectHeading;
+    	font-size:18px;
+	line-height:21px;
+	padding-top:3px;
+    }
+    .projecttext {
+    	grid-area:ProjectText;
+    }
+    
+    
+    
+    </style>
+ 
+    
+  </header>
+<body style="background-color:#e5f6ee">
+<center>
+  <h1 class="siteheading">Higher Awards Projects</h1></center>
+<div class="topcontainer">
+  
+  <div class="sidenavbar">
+    <div class="sidenavitem">
+      Gold Award Projects
+    </div>
+    <div class="sidenavitem">
+     Silver Award Projects
+    </div>
+        <div class="sidenavitem">
+      Bronze Award Projects
+    </div>
+    <div class="sidenavitem">
+      Journey Awards
+    </div>
+    <div class="sidenavitem2">
+      Brownie
+    </div>
+    <div class="sidenavitem2">
+      Junior
+    </div>
+    <div class="sidenavitem2">
+      Cadette
+    </div>
+     <div class="sidenavitem2">
+      Senior
+    </div>
+     <div class="sidenavitem2">
+      Ambassador
+    </div>
+ 
+    
+  </div>
+
+  <div class="main">
+    
+<p>This page showcases our Cadette Journey Awards.<br><br>
+
+<a href="https://higherawardsprojects.github.io/">Return to Main Page</a>
+  
+
+    
+    </p>
+
+  </div>
+  </div>
+
+<div class="content">
+
+<div class="project">
+    <div class="projectimage">
+      <img src="/docs/assets/images/MEdiacodeimage.jpg"/>
+    </div>     
+    <div class="projectheading">
+     Cadette "MEdia" Journey, May 2024<br>
+      Valerie H, Troop 47307
+    </div>
+   <div class="projecttext">
+    Project Text
+    </div> 
+  </div>
+
+<div class="project">
+    <div class="projectimage">
+      <img src="/docs/assets/images/cadettejourney.jpg"/>
+    </div>     
+    <div class="projectheading">
+     Cadette "Breathe" Journey, Oct 2023<br>
+      Valerie H, Troop 47307
+    </div>
+   <div class="projecttext">
+    Project Text
+    </div> 
+  </div>
+
+  <!--This is the project template.  Add a new copy to the above and fill in the blanks.
+<div class="project">
+    <div class="projectimage">
+      <img src="/docs/assets/images/IMAGEFILENAME"/>
+    </div>     
+    <div class="projectheading">
+     (Award Name, Project Name, Date) OR (GS Level, Journey Award Name, Date)<br>
+      Girl Name, Troop Number
+    </div>
+   <div class="projecttext">
+    Project Text
+    </div> 
+  </div>
+-->
+  
+  </div>
+<a href="https://higherawardsprojects.github.io/">Return to Main Page</a>
+
+</body>
+</html>
