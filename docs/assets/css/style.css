@@ -1,0 +1,108 @@
+
+  ::-webkit-scrollbar {
+  width: 8px;	
+    border-radius:5px;
+  }
+  ::-webkit-scrollbar-track{
+    width: 8px;
+    background-color:#00AE58;
+    border-radius:5px;
+        }
+  ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:4px;
+}
+  ::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+  
+  .siteheading {
+    color:#00AE58
+  }
+  .topcontainer {
+  display:grid;
+  grid-template-rows:252px;
+  grid-template-columns:160px auto;
+  grid-template-areas:'Sidebar Intro';
+  grid-column-gap:25px;
+  border:0px transparent solid;
+  margin-bottom:20px;
+  }
+  .sidenavbar {
+  grid-area:Sidebar;	
+  border:0px transparent solid;
+  }
+  .sidenavitem {
+    border:1px black solid;
+  background-color:#00AE58;
+    border-radius:0px 12px 12px 0px;
+    height:24px;
+    color:#111111;
+    line-height:24px;
+    padding-left:3px;
+    margin:1px;
+  }
+  .sidenavitem2 {
+    border:1px black solid;
+    background-color:#4cc68a;
+    border-radius: 0px 12px 12px 0px;
+    height:24px;
+    color:#111111;
+    line-height:24px;
+    padding-left:6px;
+    margin-left:1px;
+    margin-top:1px;
+    margin-bottom:1px;
+    margin-right:25px;
+  }
+  .main {
+  grid-area:Intro;
+    margin:5px;
+    overflow:auto;
+  }
+  .content {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    border:0px transparent solid;
+    
+  }
+  .project {
+    width:400px;
+    display:grid;
+    grid-template-rows: 250px 48px 250px;
+    grid-template-areas: 'Image' 'ProjectHeading' 'ProjectText';
+    border:2px #00ae58 solid;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:3px;
+    overflow:auto;
+  }   
+  .projectimage {
+    grid-area:Image;
+align-items:center;	
+    
+    height:100%;
+>img { 
+  max-height:100%;
+        max-width:100%;
+  display: block;
+  border: 1px #00ae58 solid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  }
+  .projectheading {
+    grid-area:ProjectHeading;
+    font-size:18px;
+line-height:21px;
+padding-top:3px;
+  }
+  .projecttext {
+    grid-area:ProjectText;
+  }
+  
+  
+  
