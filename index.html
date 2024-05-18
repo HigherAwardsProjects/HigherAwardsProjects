@@ -71,18 +71,19 @@
     	align-items:center;
     	flex-direction:row;
     	flex-wrap:wrap;
-    	border:1px red solid;
+    	border:0px transparent solid;
     	
     }
     .project {
     	width:350px;
     	display:grid;
-    	grid-template-rows: 250px 48px auto;
+    	grid-template-rows: 250px 48px 250px;
     	grid-template-areas: 'Image' 'ProjectHeading' 'ProjectText';
-    	border:1px blue solid;
+    	border:2px #00ae58 solid;
     	margin-top:20px;
     	margin-bottom:20px;
     	padding:3px;
+    	overflow:auto;
     }   
     .projectimage {
     	grid-area:Image;
@@ -92,12 +93,10 @@
     }
     .projectheading {
     	grid-area:ProjectHeading;
-    	border:1px orange solid;
     	font-size:18px;
     }
     .projecttext {
     	grid-area:ProjectText;
-    	border:1px purple solid;
     }
     
     
@@ -189,6 +188,7 @@
     </div> 
   </div>
   
+  <!--This is the project template.  Add a new copy to the above and fill in the blanks.
       <div class="project">
     <div class="projectimage">
       
@@ -201,6 +201,7 @@
     Project Text
     </div> 
   </div>
+-->
   
   </div>
 
@@ -215,3 +216,4 @@
 
 </body>
 </html>
+
